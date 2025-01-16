@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Headers</title>
+    <style>
+        table, th, td
+        {
+            border: 3px solid black;
+            border-collapse: collapse;
+            border-radius: 10px;
+
+        }
+        th
+        {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    HTML Table Headers
+    HTML tables can have headers for each column or row, or 
+    for many columns/ rows.
+    Table headers are defined with th elements. Each th element represents a table cell.
+    Vertical Table Headers
+    To use the first column as table headers, define the first cell in each row as a <th> element
+    Align Table Headers
+    By default, table headers are bold and centered
+    To left-align the table headers, use the CSS text-align property
+    
+    -->
+
+    <table style="width: 100%;">
+        <tr>
+            <th>FirstName</th>
+            <td>Douglas</td>
+            <td>Mercy</td>
+        </tr>
+        <tr>
+            <th>LastName</th>
+            <td>Onyil</td>
+            <td>Ogutu</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>24</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+
+    <hr>
+
+    <!--
+        Header for Multiple Columns
+    You can have a header that spans over two or more columns
+    To do this, use the colspan attribute on the <th> element
+    -->
+    <!--
+        Table Caption
+        You can add a caption that serves as a heading for the entire table
+        To add a caption to a table, use the <caption> tag
+        NOTE: The <caption> tag should be inserted immediately after the <table> tag.
+    -->
+    <table style="width: 100%;">
+        <caption>Colleagues Name and Age</caption>
+        <tr>
+            <!--th>FirstName</th-->
+            <th colspan="2" style="text-align: center;">Name</th>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <td>Douglas</td>
+            <td>Onyil</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Mercy</td>
+            <td>Ogutu</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    
+    
+</body>
+</html>

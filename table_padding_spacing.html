@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Cell Padding and spacing</title>
+    <style>
+        table, th, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-radius: 10px;
+
+        }
+        th
+        {
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    HTML tables can adjust the padding inside the cells, and also the spacing between the cells.
+    HTML TABLE CELL PADDING
+    Cell padding is the space between the cell edges and the cell content
+    By default the padding is set to 0.
+    To add padding on table cells, use the CSS padding property
+    To add padding only above the content, use the padding-top property.
+    And the others sides with the padding-bottom, padding-left, and padding-right properties.
+    HTML TABLE CELL SPACING
+    Cell spacing is the space between each cell
+    By default the space is set to  2 pixels.
+    To change the space between table cells, use the CSS border-spacing property on the table element.
+    -->
+    
+    <table style="width: 100%;border-spacing: 10000px;">
+        <caption>Colleagues Name and Age</caption>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Douglas</td>
+            <td>Onyil</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Mercy</td>
+            <td>Ogutu</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+</body>
+</html>
