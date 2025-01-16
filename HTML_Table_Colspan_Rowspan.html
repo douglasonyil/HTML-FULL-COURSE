@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Colspan and Rowspan</title>
+    <style>
+        table, th, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td
+        {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HTML tables can have cells that span over multiple rows and/or columns.
+        HTML TABLE COLSPAN
+        To make a cell span over multiple columns, use the colspan attribute
+        NOTE: The value of the colspan attribute represents the number of columns to span.
+    -->
+        <table>
+            <tr>
+                <th colspan = "2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Douglas</td>
+                <td>Onyil</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Mercy</td>
+                <td>Ogutu</td>
+                <td>21</td>
+            </tr>
+        </table>
+
+    <!--
+        HTML TABLE ROWSPAN
+        To make a cell span over multiple rows, use the rowspan attribute.
+        NOTE: The value of the rowspan attribute represents the number of rows to span.    
+    -->
+<hr>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>555-1234</td>
+            </tr>
+            <tr>
+                <td>555-8745</td>
+            </tr>
+        </table>
+</body>
+</html>

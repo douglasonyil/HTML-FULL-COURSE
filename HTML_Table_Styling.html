@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Styling</title>
+    <style>
+        table, th, td
+        {
+            border-bottom: 1px solid black;
+            border-right: 1px dotted darkblue;
+            border-left: 2px ridge darkgreen;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td 
+        {
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even)
+        {
+            background-color: #D6EEEE;
+        }
+        th:nth-child(even),td:nth-child(even)
+        {
+            background-color: #a2EEEE;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HTML TABLE ZEBRA STRIPES
+        If you add a background color on every other table row, you will get a nice zebra stripes effect.
+        To style every other table row element, use the :nth-child(even) selector like this:
+        NOTE: If you use (odd) instead of (even), the styling will occur on row 1,3,5 etc. instead of 2, 4,6 etc
+    -->
+    <!--
+        HTML TABLE - VERTICAL ZEBRA STRIPES
+        To make vertical zebra stripes, style every other column, instead of every other row.
+        Put the :nth-child() selector on both th and td elements if you want to have the styling on both headers and regular table cells. 
+    -->
+    <!--
+        COMBINE VERTICAL AND HORIZONTAL ZEBRA STRIPES
+        You can combine the styling from the two examples above and you will have stripes on every other row and every other column.If you use a transparent color you will get an overlapping effect.Use the rgba() color to specify the transparency of the color.
+    -->
+
+    <!--
+    HORIZONTAL DIVIDERS
+    If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers.
+    Add the border-bottom property to all tr elements to get horizontal dividers.
+    -->
+
+    <!--
+    HOVERABLE TABLE
+    Use the :hover selector on tr to highlight table rows on mouse over.
+    -->
+
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Douglas</td>
+                <td>Onyil</td>
+                <td>24</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Mercy</td>
+                <td>Ogutu</td>
+                <td>21</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>100</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Cleveland</td>
+                <td>Brown</td>
+                <td>45</td>
+                <td>250</td>
+            </tr>
+        </table>
+        
+
+</body>
+</html>
