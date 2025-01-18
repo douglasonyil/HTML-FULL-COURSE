@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Div Element</title>
+    <style>
+        div.mycontainer
+        {
+            display: flex;
+            width:100%;
+            overflow: auto;
+        }
+        div.mycontainer div
+        {
+            width: 30%;
+            float: left;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="mycontainer">
+        <!--
+    THE <DIV> ELEMENT
+    The <div> element is often used as a container for other HTML elements.
+    Th <DIV> element has no required attributes, but style, class and id are common.
+    When used together with CSS, the <DIV> element can be used to style blocks of content.
+    -->
+
+    <div style="background-color: black;color: white;padding: 20px;">
+        <h2>DOUGLAS ONYIL</h2>
+        <p>Douglas Onyil is a software engineer and loves staying up to speed with every new technology.He's an outgoing person who enjoys creating positive connections with strangers. He's self-driven and ambitious striving to turn dreams into reality, while maintaining strong mental resilience, assuring himself that he's the best and a winner, no matter the situation he faces. He's innovative and results driven will to do anything within his power to turn code into software that fulfills customer's requirements.</p>
+    </div>
+
+    <!--
+    CENTER ALIGN A <DIV> ELEMENT
+        If you have a <DIV> element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto.
+    -->
+
+    <div style="background-color: rgb(243, 15, 15);color: white;padding: 20px;">
+        <h2>DOUGLAS ONYIL</h2>
+        <p>Douglas Onyil is a software engineer and loves staying up to speed with every new technology.He's an outgoing person who enjoys creating positive connections with strangers. He's self-driven and ambitious striving to turn dreams into reality, while maintaining strong mental resilience, assuring himself that he's the best and a winner, no matter the situation he faces. He's innovative and results driven will to do anything within his power to turn code into software that fulfills customer's requirements.</p>
+    </div>
+
+
+    <div style="background-color: blue;color: white;padding: 20px;">
+        <h2>DOUGLAS ONYIL</h2>
+        <p>Douglas Onyil is a software engineer and loves staying up to speed with every new technology.He's an outgoing person who enjoys creating positive connections with strangers. He's self-driven and ambitious striving to turn dreams into reality, while maintaining strong mental resilience, assuring himself that he's the best and a winner, no matter the situation he faces. He's innovative and results driven will to do anything within his power to turn code into software that fulfills customer's requirements.</p>
+    </div>
+
+    <!--
+    ALIGNING <DIV> ELEMENTS SIDE BY SIDE
+    When building web pages, you often want to have two or more <DIV> elements side by side
+        FLOAT
+    The CSS float property was not originally meant to align <DIV> elements side by side, but has been used for this purpose for many years
+    The CSS float property is used for positioning and formatting content and allows elements to be positioned horizontally, rather than vertically
+    -->
+    </div>
+
+    <!--
+    FLEX
+    The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure without using float or positioning.
+    To make the CSS flex method work, surround the <DIV> elements with another <DIV> element and gice it the status as a flex container.
+    -->
+
+    <!--
+    GRID
+    The The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+    Sounds almost the same as flex, but has the ability to define more than one row and position each row individually
+    The CSS grid method requires that you surround the <DIV> elements with another <DIV> element and give the status as a grid container, and you must specify the width of each column.
+    -->
+
+</body>
+</html>

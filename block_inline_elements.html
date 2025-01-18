@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block and Inline Elements</title>
+</head>
+<body>
+
+    <!--
+    Every HTML element has a default display value, depending on what type of element it is.
+    The two most common display values are block and inline.
+    BLOCK-LEVEL ELEMENTS
+    A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element
+    A block-level element always takes up the full width available(strtches out to the left and right as far as it can).
+    Two commonly used block elements are: <p> and <div>.
+    The P and DIV elements are both block elements, and they will always start on a new line and take up the full width available (stretches out to the left and right as far as it can)
+    -->
+
+    <p style="border: 1px solid black;">Hello World</p>
+    <div style="border: 1px solid black;">Hello World</div>
+
+    <!--
+    INLINE ELEMENTS
+    An inline element does not start on a new line.
+    An inline element only takes up as much width as necessary
+    This is a <SPAN> element inside a paragragh
+    -->
+    <p>This is an inline span <span style="border: 1px solid black;">Hello world</span> element inside a paragraph</p>
+    <p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary</p>
+
+    <!--
+    THE <DIV> ELEMENT
+    The <div> element is often used as a container for other HTML elements.
+    Th <DIV> element has no required attributes, but style, class and id are common.
+    When used together with CSS, the <DIV> element can be used to style blocks of content.
+    -->
+
+    <div style="background-color: black;color: white;padding: 20px;">
+        <h2>DOUGLAS ONYIL</h2>
+        <p>Douglas Onyil is a software engineer and loves staying up to speed with every new technology.He's an outgoing person who enjoys creating positive connections with strangers. He's self-driven and ambitious striving to turn dreams into reality, while maintaining strong mental resilience, assuring himself that he's the best and a winner, no matter the situation he faces. He's innovative and results driven will to do anything within his power to turn code into software that fulfills customer's requirements.</p>
+    </div>
+
+    <!--
+    THE <SPAN> ELEMENT
+    The <SPAN> element is an inline container used to mark up a part of a text, or a part of a document.
+    The <SPAN> element has no required attributes, but style, class and id are common.
+    -->
+
+
+    <h1>The span element</h1>
+
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+</body>
+</html>

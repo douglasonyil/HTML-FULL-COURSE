@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML class Attribute</title>
+    <style>
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: 20% 20% 20%;
+        }
+        .city
+        {
+            background-color: rgba(0%, 0%, 0%, 1);
+            color: rgba(100%, 100%, 100%, 1);
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 20px;
+            width: 50%;
+
+        }
+        .note
+        {
+            font-size: 120%;
+            color: red;
+        }
+        .cities {
+        background-color: tomato;
+        color: white;
+        padding: 10px;
+        } 
+
+        .main {
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class.
+    USING THE CLASS ATTRIBUTE
+    The class attribute is often used to point to a class name in a style sheet.It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+    In the following example we have three <DIV> elements with a class attribute with the value of "city".All of the three <DIV> elements will be styled equally according to the .city style definition in the head section. 
+    -->
+
+    <button onclick="myFunction()">Hide Elements</button>
+
+    <div class="grid-container">
+
+    <!--<div class="city">
+        <h2>Nairobi</h2>
+        <p>Nairobi is the capital city of Kenya</p>
+    </div>-->
+    
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital city of Japan</p>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital city of France</p>
+    </div>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital city of England</p>
+    </div>
+</div>
+
+<!--
+In the following example we have two <SPAN> elements with a class attribute with the value of "note". Both <SPAN> elements will be styled equally according to the .note style definition in the head section.
+-->
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text</p>
+
+<!--
+The class attribute can be used on any HTML element
+NOTE: The class name is case sensitive!
+THE SYNTAX FOR CLASS
+To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}
+-->
+
+<!--
+MULTIPLE CLASSES
+HTML elements can belong to more than one class. To define multiple classes, separate the class names with a space, e.g. <div class="city main">. The element will be styled according to all the classes specified
+    In the following example, the first <h2> element belongs to both the city class and also to the main class, and will get the CSS styles from both of the classes.
+-->
+
+<h2>Multiple Classes</h2>
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+<h2 class="cities main">CAPITAL CITIES</h2>
+<h2 class="cities">Paris</h2>
+<h2 class="cities">Tokyo</h2>
+
+<!--DIFFERENT ELEMENTS CAN SHARE SAME CLASS
+Different HTML elements can point to the same class name.-->
+<!--
+USE OF THE CLASS ATTRIBUTE IN JAVASCRIPT
+
+The class name can also be used by JavaScript to perform certain tasks for specific elements. JavaScript can access elements with a specific class name with the getElementByClassName() method.
+-->
+
+<script>
+    function myFunction() {
+        var to_hide = document.getElementByClassName("city");
+        for (var i = 0; i < to_hide.length; i++) {
+            to_hide[i].style.display = "none";
+            
+        }
+        
+    }
+</script>
+
+
+</body>
+</html>
